@@ -4,7 +4,7 @@ provider "azurerm" {
 
 terraform {
   required_providers {
-    azurerm = "<=2.80.0"
+    azurerm = "<=2.91.0"
   }
 }
 
