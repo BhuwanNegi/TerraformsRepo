@@ -13,7 +13,7 @@ resource "azurerm_resource_group" "Example1"{
 	location = "West Europe"
 }
 
-resource "azurerm_resource_group" "Example1"{
+resource "azurerm_resource_group" "Example2"{
 	name = "Beautiful-rg"
 	location = "West Europe"
 }
