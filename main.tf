@@ -12,3 +12,8 @@ resource "azurerm_resource_group" "Example1"{
 	name = "Bhuwan-rg"
 	location = "West Europe"
 }
+
+resource "azurerm_resource_group" "Example1"{
+	name = "Beautiful-rg"
+	location = "West Europe"
+}
