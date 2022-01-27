@@ -8,12 +8,23 @@ terraform {
   }
 }
 
+
+provider "azurerm"{
+  alias = "rm1"
+  region = "Central US"
+}
+
+provider "azurerm"{
+  alias = "rm2"
+  region = "East US"
+}
+
 resource "azurerm_resource_group" "Example1"{
 	name = "Bhuwan-rg"
-	location = "West Europe"
+	provider = azurerm.rm1
 }
 
 resource "azurerm_resource_group" "Example2"{
 	name = "Beautiful-rg"
-	location = "West Europe"
+	provider = azurerm.rm2
 }
