@@ -8,7 +8,7 @@ terraform {
   }
 }
 
-
+/*
 provider "azurerm"{
   alias = "rm1"
   region = "Central US"
@@ -27,4 +27,10 @@ resource "azurerm_resource_group" "Example1"{
 resource "azurerm_resource_group" "Example2"{
 	name = "Beautiful-rg"
 	provider = azurerm.rm2
+}*/
+
+
+resource "azurerm_resource_group" "Example3"{
+	name = "NewGroup-rg"
+	location = "West US"
 }
