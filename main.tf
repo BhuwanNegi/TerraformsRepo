@@ -34,7 +34,7 @@ resource "azurerm_resource_group" "Example1"{
 	name = "Bhuwan-rg"
 	location = "West US"
 }
-resource azurerm_resource_group{
+resource "azurerm_resource_group" "Example2"{
   name = "Bhuwan2-rg"
   location = "west US"
 }
