@@ -30,7 +30,11 @@ resource "azurerm_resource_group" "Example2"{
 }*/
 
 
-resource "azurerm_resource_group" "Example3"{
-	name = "NewGroup-rg"
+resource "azurerm_resource_group" "Example1"{
+	name = "Bhuwan-rg"
 	location = "West US"
+}
+resource azurerm_resource_group{
+  name = "Bhuwan2-rg"
+  location = "west US"
 }
