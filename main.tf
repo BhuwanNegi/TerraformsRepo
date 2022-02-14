@@ -38,3 +38,11 @@ resource "azurerm_resource_group" "Example2"{
   name = "Bhuwan2-rg"
   location = "west US"
 }
+
+variable "az_name_example1" {
+  default = "NewBhuwan"
+}
+
+variable "az_location_example1" {
+  default = "East Europe"
+}
